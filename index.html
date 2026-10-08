@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Infographics</title>
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { background:#070d1a; color:#e8eefc; font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","Segoe UI",Inter,Roboto,sans-serif; }
+  .wrap { max-width:900px; margin:0 auto; padding:64px 24px; }
+  .kicker { letter-spacing:4px; font-size:12px; color:#7dd3fc; text-transform:uppercase; text-align:center; }
+  h1 { font-size:44px; font-weight:800; text-align:center; margin:12px 0 8px;
+       background:linear-gradient(90deg,#7dd3fc,#a78bfa,#f0abfc);
+       -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .sub { text-align:center; color:#8ea0c2; font-size:15px; margin-bottom:40px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(260px,1fr)); gap:18px; }
+  .card { display:block; text-decoration:none; color:inherit; background:#0d1526;
+          border:1px solid #1a2542; border-radius:20px; padding:28px; transition:transform .15s, border-color .15s; }
+  .card:hover { transform:translateY(-3px); border-color:#2b3d6b; }
+  .card .emoji { font-size:34px; }
+  .card h2 { font-size:20px; margin:12px 0 6px; }
+  .card p { color:#8ea0c2; font-size:14px; line-height:1.5; }
+  .card .meta { margin-top:14px; font-size:12px; color:#5b6b8c; letter-spacing:1px; text-transform:uppercase; }
+  .card.soon { opacity:.45; pointer-events:none; border-style:dashed; }
+  .foot { text-align:center; color:#5b6b8c; font-size:12px; margin-top:48px; }
+</style></head>
+<body><div class="wrap">
+  <div class="kicker">✦ collection</div>
+  <h1>Infographics</h1>
+  <div class="sub">Data stories, visualized.</div>
+  <div class="grid">
+    <a class="card" href="flights/">
+      <div class="emoji">✈️</div>
+      <h2>12 Years of Flying</h2>
+      <p>413 flights · 1,372,305 km · 108 trips · 27 countries. Every flight from 2014 to 2026, mapped.</p>
+      <div class="meta">Oct 2026</div>
+    </a>
+    <div class="card soon">
+      <div class="emoji">📊</div>
+      <h2>More coming soon</h2>
+      <p>New infographics will appear here as they're made.</p>
+      <div class="meta">—</div>
+    </div>
+  </div>
+  <div class="foot">Built with data · updated automatically</div>
+</div></body></html>
